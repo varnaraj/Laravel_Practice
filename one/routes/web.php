@@ -18,5 +18,5 @@ Route::get('/', function () {
 });
 
 Route::get('contact_number',function(){
-    return "0767280499";
+    return "0767280**99";
 });
