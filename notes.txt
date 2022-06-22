@@ -1,0 +1,16 @@
+php frame work
+well documentated
+install
+    composer -> its a package manager(include all libraried of php)
+    1. download composer setup
+    2. composer global require laravel/installer
+
+create a laracel program
+    laravel new name1
+    or
+    composer create-project --prefer-dist laravel/laravel name2
+
+run laravel
+    php artisan serve
+
+
