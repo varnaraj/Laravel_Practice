@@ -18,5 +18,9 @@ Route::get('/', function () {
 });
 
 Route::get('/hello', function(){
-    return 'hello world';
+    return response('<h1>hello world</h1>');
+});
+Route::get('/posts/{id}',function($id){
+    return espose('Post '.$id);
+    //return 'hii';
 });
