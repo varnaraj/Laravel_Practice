@@ -12,5 +12,6 @@ create a laracel program
 
 run laravel
     php artisan serve
+blade-> template engine
 
 

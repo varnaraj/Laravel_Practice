@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,13 +15,21 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('listings',[
+        'heading'=>'It is a heading'
+        
+    ]);
 });
 
 Route::get('/hello', function(){
     return response('<h1>hello world</h1>');
 });
-Route::get('/posts/{id}',function($id){
-    return espose('Post '.$id);
-    //return 'hii';
+// Route::get('/posts/{id}',function($id){
+//     return espose('Post '.$id);
+//     //return 'hii';
+// });
+
+Route::get('/search', function(Request $request){
+    return $request->name . ' ' . $request->city;
 });
+
