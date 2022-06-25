@@ -14,4 +14,17 @@ run laravel
     php artisan serve
 blade-> template engine
 
+install jetstream 
+-install jetstreem when i create laravel project
+laravel new name1 --jet
+-after create project
+add the jetstream package into our app
+->composer require laravel/jetstream
+install jetstream with livewire
+->php artisan jetstream:install livewire --teams  //--teams is no need (when we don't want assigns teams) 
+or/ install with inertia
+->php artisan jetstream:install inertia --teams //--teams is no need
+then run
+->npm install && npm run dev 
 
+create data base to the application
